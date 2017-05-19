@@ -1,0 +1,104 @@
+ul{
+				list-style: none;
+			}
+			h4.ng-binding:nth-child(2){
+				color:#733380;
+				font-weight: bold;
+			}
+			h4.ng-binding:nth-child(3){
+				color:#64609a;
+				font-weight: bold;
+			}
+			h1{
+				font-family: times roman;
+			}
+			.jumbotron{
+				margin-top: 10px;
+				font-family: times roman;
+			}
+			.jumbotron h1{
+				color:blue;
+			}
+			.itemField{
+				position: relative;
+				top: 50px;
+				width: 400px;
+				height: 250px;
+				font-size: 20px;
+				font-family: Myriad Pro regular;
+				color:#000;
+			}
+			.itemElement{
+				float: right;
+				padding: 15px 50px 0 0;
+			}
+			.contact1{
+				float:clear;
+			}
+			.affix {
+				z-index: 1;
+				top: 25%;
+				border-radius: 6px;
+				width: 555px;
+				padding: 10px 0 20px 40px;
+				font-family: times roman;
+				color: #000;
+				font-size: 20px;
+				background: lightgray;
+			}
+				input[type="number"] {
+			   width:70px;
+			}
+			button{
+				color: #000;
+				background-color: white;
+				
+			}
+			#Items{
+				margin-top: 20%;
+			}
+			.badge{
+				background-color: red;
+			}
+			/*Make Remove section Responsive for different screen size*/
+			@media (max-width: 1200px){
+				.affix{
+					width: 450px;
+				}
+				
+			}
+			@media (max-width: 990px){
+				.affix{
+					top: 76%;
+					width: 721px;
+				}
+			}
+			
+			@media (max-width: 650px){
+				.affix{
+					top: 76%;
+					width: 600px;
+				}
+
+			}
+			@media (max-width: 400px){
+				.affix{
+					top: 76%;
+					width: 344px;
+				}
+				input[type="text"] {
+				   width: 200px;
+				}
+				.itemField{
+					width: 350px;
+					font-size: 15px;
+				}
+				#Items{
+					margin-top: 35%;
+				}
+				
+			}
+			/*---------------------------------------------------------*/
+		
+		
+		

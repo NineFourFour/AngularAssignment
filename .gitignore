@@ -1,0 +1,18 @@
+##############################################
+#										     #
+#	Files for git to ignore. I.e. they       #
+#	won't be tracked or 	committed        #
+#											 #
+##############################################
+
+# Ignore all eclipse setting files
+.classpath
+.metadata
+.project
+.recommenders
+.settings
+
+# ignore all .class files and the bin folder
+*.class
+/bin/
+WE40_MWA_Assessment_Brief.pdf

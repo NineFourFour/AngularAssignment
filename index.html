@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html data-ng-app="listItems">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>ToDo List</title>
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/list.js"></script>
+		<link rel="stylesheet" href="css/list.css">		
+	</head>
+	<body>
+		<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1>ToDo List</h1>
+				</div>
+			</div>
+		<div class="container" data-ng-controller="toDoList" >
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1>Add Items to List</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1>Remove Items From List</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="jumbotron">
+						<div class="itemField">
+							<div class="itemElement" >
+								Item: <input type="text" data-ng-model="newItem.name" />
+							</div>
+							
+							<div class="itemElement">
+								Description: <input type="text" data-ng-model="newItem.description" />
+							</div>
+							<div class="itemElement">
+								<button data-ng-click="addListItem()">Add To List</button>
+							</div>
+							<br> 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div data-spy="affix">						
+						Item no: <input type="number" data-ng-model = "num" />
+						<button data-ng-click="delete()">Remove</button>
+					</div>
+					<div id="Items">
+						<ul class="list-group">
+							<li class="list-group-item" data-ng-repeat="current in items"><span class="badge">{{$index}}</span> <h4>Item: {{current.name}}</h4><h4>Description: {{current.description}}</h4></li>	
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
